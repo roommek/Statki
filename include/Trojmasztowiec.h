@@ -5,7 +5,7 @@
 #ifndef TROJMASZTOWIEC_H
 #define TROJMASZTOWIEC_H
 
-#include <Ship.h>
+#include "Ship.h"
 
 
 class Trojmasztowiec : public Ship

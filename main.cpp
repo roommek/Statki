@@ -1,16 +1,16 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include <windows.h>
 
-#include "Game.h"
-#include "Ship.h"
-#include "Jednomasztowiec.h"
-#include "Dwumasztowiec.h"
-#include "Trojmasztowiec.h"
-#include "Czteromasztowiec.h"
-#include "Player.h"
-#include "BigField.h"
-#include "GameText.h"
+
+#include "include/Game.h"
+#include "include/Ship.h"
+#include "include/Jednomasztowiec.h"
+#include "include/Dwumasztowiec.h"
+#include "include/Trojmasztowiec.h"
+#include "include/Czteromasztowiec.h"
+#include "include/Player.h"
+#include "include/BigField.h"
+#include "include/GameText.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

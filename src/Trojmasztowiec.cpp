@@ -1,8 +1,8 @@
-#include "Trojmasztowiec.h"
+#include "../include/Trojmasztowiec.h"
 #include <fstream>
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include <windows.h>
+
 using namespace sf;
 
 Trojmasztowiec::Trojmasztowiec(int number)

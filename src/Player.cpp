@@ -1,4 +1,4 @@
-#include "Player.h"
+#include "../include/Player.h"
 
 Player::Player(string input_name): name(input_name), hits(0){}
 

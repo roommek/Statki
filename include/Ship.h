@@ -7,7 +7,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include <windows.h>
+
 
 
 using namespace sf;

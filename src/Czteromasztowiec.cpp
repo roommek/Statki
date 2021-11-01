@@ -1,8 +1,8 @@
-#include "Czteromasztowiec.h"
+#include "../include/BigField.h"
 #include <fstream>
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include <windows.h>
+
 using namespace sf;
 
 Czteromasztowiec::Czteromasztowiec(int number)

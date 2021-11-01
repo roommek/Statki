@@ -7,7 +7,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include <windows.h>
+
 
 #include "Field.h"
 #include "Ship.h"

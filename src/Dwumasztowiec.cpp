@@ -1,8 +1,8 @@
-#include "Dwumasztowiec.h"
+#include "../include/Dwumasztowiec.h"
 #include <fstream>
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include <windows.h>
+
 using namespace sf;
 
 Dwumasztowiec::Dwumasztowiec(int number)

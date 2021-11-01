@@ -1,8 +1,8 @@
-#include "Jednomasztowiec.h"
+#include "../include/Jednomasztowiec.h"
 #include <fstream>
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include <windows.h>
+
 using namespace sf;
 
 Jednomasztowiec::Jednomasztowiec(int number)

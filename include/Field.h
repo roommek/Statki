@@ -6,7 +6,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include <windows.h>
+
 
 #include "Ship.h"
 

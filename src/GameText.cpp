@@ -1,4 +1,4 @@
-#include "GameText.h"
+#include "../include/GameText.h"
 
 GameText::GameText(sf::String & input , sf::Font & font, int textSize, sf::Vector2f position, sf::Uint32 style, sf::Color color)
                    :text(input, font, textSize){

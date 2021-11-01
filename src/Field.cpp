@@ -1,4 +1,4 @@
-#include "Field.h"
+#include "../include/Field.h"
 #include <fstream>
 
 Field::Field(Vector2f vect)

@@ -1,4 +1,4 @@
-#include "BigField.h"
+#include "../include/BigField.h"
 
 BigField::BigField()
 {

@@ -5,7 +5,7 @@
 #ifndef DWUMASZTOWIEC_H
 #define DWUMASZTOWIEC_H
 
-#include <Ship.h>
+#include "Ship.h"
 
 
 class Dwumasztowiec : public Ship

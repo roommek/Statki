@@ -1,4 +1,4 @@
-#include "Ship.h"
+#include "../include/Ship.h"
 
 Ship::Ship(){
     horizontal=true;

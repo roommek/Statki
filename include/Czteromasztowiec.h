@@ -5,7 +5,7 @@
 #ifndef CZTEROMASZTOWIEC_H
 #define CZTEROMASZTOWIEC_H
 
-#include <Ship.h>
+#include "Ship.h"
 
 
 class Czteromasztowiec : public Ship

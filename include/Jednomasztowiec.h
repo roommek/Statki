@@ -5,7 +5,7 @@
 #ifndef JEDNOMASZTOWIEC_H
 #define JEDNOMASZTOWIEC_H
 
-#include <Ship.h>
+#include "Ship.h"
 
 
 class Jednomasztowiec : public Ship

@@ -1,5 +1,7 @@
+LIBS=-lsfml-graphics -lsfml-window -lsfml-system
+
 gra: main.o BigField.o Czteromasztowiec.o Dwumasztowiec.o Field.o Game.o GameText.o GameWindow.o Jednomasztowiec.o Player.o Ship.o Trojmasztowiec.o 
-	g++ -o gra main.o BigField.o Czteromasztowiec.o Dwumasztowiec.o Field.o Game.o GameText.o GameWindow.o Jednomasztowiec.o Player.o Ship.o Trojmasztowiec.o
+	g++ -o gra main.o BigField.o Czteromasztowiec.o Dwumasztowiec.o Field.o Game.o GameText.o GameWindow.o Jednomasztowiec.o Player.o Ship.o Trojmasztowiec.o $(LIBS)
 	
 main.o: main.cpp include/BigField.h include/Czteromasztowiec.h include/Trojmasztowiec.h include/Dwumasztowiec.h include/Jednomasztowiec.h include/Game.h include/GameText.h include/Player.h include/Ship.h
 	g++ -c main.cpp 
@@ -38,4 +40,4 @@ Trojmasztowiec.o: src/Trojmasztowiec.cpp include/Trojmasztowiec.h
 	g++ -c src/Trojmasztowiec.cpp
 
 clean:
-	rm *.o main
+	rm *.o gra

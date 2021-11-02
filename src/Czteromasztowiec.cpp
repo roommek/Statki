@@ -10,9 +10,9 @@ Czteromasztowiec::Czteromasztowiec(int number)
     type=4;
     position.x=660+ number*160;
     position.y=510;
-    texture.loadFromFile("statek4.png");
+    texture.loadFromFile("assets/statek4.png");
     try{
-            if (!texture.loadFromFile("statek4.png"))
+            if (!texture.loadFromFile("assets/statek4.png"))
                 throw(texture);
         }
     catch(Texture){
@@ -36,9 +36,9 @@ Czteromasztowiec::~Czteromasztowiec()
 
 void Czteromasztowiec::changeTexture()
 {
-     texture.loadFromFile("statek4DESTROYED.png");
+     texture.loadFromFile("assets/statek4DESTROYED.png");
      try{
-            if (!texture.loadFromFile("statek4DESTROYED.png"))
+            if (!texture.loadFromFile("assets/statek4DESTROYED.png"))
                 throw(texture);
         }
     catch(Texture){

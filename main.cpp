@@ -22,10 +22,10 @@
 int main(){
     sf::RenderWindow window(sf::VideoMode(1080, 720, 32), "Battle Ships", sf::Style::None);
     sf::Font font;
-    font.loadFromFile("SqueakyChalkSound.ttf");
+    font.loadFromFile("assets/SqueakyChalkSound.ttf");
 
     try{
-        if(!font.loadFromFile("SqueakyChalkSound.ttf"))
+        if(!font.loadFromFile("assets/SqueakyChalkSound.ttf"))
             throw(font);
     }
 
@@ -85,9 +85,9 @@ int main(){
         }
         case 2:{
             sf::Texture textureBackground;
-            textureBackground.loadFromFile( "table.jpg" );
+            textureBackground.loadFromFile( "assets/table.jpg" );
             try{
-            if (!textureBackground.loadFromFile("table.jpg"))
+            if (!textureBackground.loadFromFile("assets/table.jpg"))
                 throw(textureBackground);
             }
             catch(Texture){

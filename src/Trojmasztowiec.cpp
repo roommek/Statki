@@ -10,9 +10,9 @@ Trojmasztowiec::Trojmasztowiec(int number)
     type=3;
     position.x=640 + number*180;
     position.y= 410;
-    texture.loadFromFile("statek3.png");
+    texture.loadFromFile("assets/statek3.png");
     try{
-            if (!texture.loadFromFile("statek3.png"))
+            if (!texture.loadFromFile("assets/statek3.png"))
                 throw(texture);
         }
     catch(Texture){
@@ -36,9 +36,9 @@ Trojmasztowiec::~Trojmasztowiec()
 
 void Trojmasztowiec::changeTexture()
 {
-     texture.loadFromFile("statek3DESTROYED.png");
+     texture.loadFromFile("assets/statek3DESTROYED.png");
      try{
-            if (!texture.loadFromFile("statek3DESTROYED.png"))
+            if (!texture.loadFromFile("assets/statek3DESTROYED.png"))
                 throw(texture);
         }
     catch(Texture){

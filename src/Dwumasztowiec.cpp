@@ -10,9 +10,9 @@ Dwumasztowiec::Dwumasztowiec(int number)
     type=2;
     position.x=620+ number*120;
     position.y=310;
-    texture.loadFromFile("statek2.png");
+    texture.loadFromFile("assets/statek2.png");
     try{
-            if (!texture.loadFromFile("statek2.png"))
+            if (!texture.loadFromFile("assets/statek2.png"))
                 throw(texture);
         }
     catch(Texture){
@@ -37,9 +37,9 @@ Dwumasztowiec::~Dwumasztowiec()
 
 void Dwumasztowiec::changeTexture()
 {
-     texture.loadFromFile("statek2DESTROYED.png");
+     texture.loadFromFile("assets/statek2DESTROYED.png");
      try{
-            if (!texture.loadFromFile("statek2DESTROYED.png"))
+            if (!texture.loadFromFile("assets/statek2DESTROYED.png"))
                 throw(texture);
         }
     catch(Texture){

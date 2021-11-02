@@ -7,9 +7,9 @@ Field::Field(Vector2f vect)
     sizes.y = 40;
     position.x = vect.x;
     position.y = vect.y;
-    texture.loadFromFile( "puste pole.png");
+    texture.loadFromFile( "assets/puste pole.png");
     try{
-            if (!texture.loadFromFile("puste pole.png"))
+            if (!texture.loadFromFile("assets/puste pole.png"))
                 throw(texture);
         }
     catch(Texture){

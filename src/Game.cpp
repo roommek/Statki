@@ -12,7 +12,7 @@ int Game::menu(RenderWindow & window){
     sf::Font font;
 
     try{
-        if(!font.loadFromFile("SqueakyChalkSound.ttf"))
+        if(!font.loadFromFile("assets/SqueakyChalkSound.ttf"))
             throw(font);
     }
     catch(Font){
@@ -33,9 +33,9 @@ int Game::menu(RenderWindow & window){
 
     while(window.isOpen()){
         sf::Texture textureBackground;
-        textureBackground.loadFromFile( "table.jpg" );
+        textureBackground.loadFromFile( "assets/table.jpg" );
         try{
-            if (!textureBackground.loadFromFile("table.jpg"))
+            if (!textureBackground.loadFromFile("assets/table.jpg"))
                 throw(textureBackground);
         }
         catch(Texture){
@@ -96,9 +96,9 @@ string Game::setPlayer(RenderWindow & window){
 	sf::Text text;
 
 	sf::Font font;
-	font.loadFromFile("SqueakyChalkSound.ttf");
+	font.loadFromFile("assets/SqueakyChalkSound.ttf");
 	try{
-        if(!font.loadFromFile("SqueakyChalkSound.ttf"))
+        if(!font.loadFromFile("assets/SqueakyChalkSound.ttf"))
             throw(font);
     }
     catch(Font){
@@ -113,9 +113,9 @@ string Game::setPlayer(RenderWindow & window){
 	text.setPosition(450, 250);
 
 	sf::Texture textureBackground;
-    textureBackground.loadFromFile( "table.jpg" );
+    textureBackground.loadFromFile( "assets/table.jpg" );
     try{
-            if (!textureBackground.loadFromFile("table.jpg"))
+            if (!textureBackground.loadFromFile("assets/table.jpg"))
                 throw(textureBackground);
         }
         catch(Texture){
@@ -183,16 +183,16 @@ string Game::setPlayer(RenderWindow & window){
 }
 void Game::draw(RenderWindow & window, int playerNum ){
     sf::Texture textureBackground;
-    textureBackground.loadFromFile( "table.jpg" );
+    textureBackground.loadFromFile( "assets/table.jpg" );
 
 
     sf::Sprite tableSprite;
     tableSprite.setTexture( textureBackground );
 
     sf::Texture textureBigfield;
-    textureBigfield.loadFromFile( "Playground.png" );
+    textureBigfield.loadFromFile( "assets/playground.png" );
     try{
-            if (!textureBigfield.loadFromFile("Playground.png"))
+            if (!textureBigfield.loadFromFile("assets/playground.png"))
                 throw(textureBigfield);
         }
         catch(Texture){
@@ -219,7 +219,7 @@ void Game::draw(RenderWindow & window, int playerNum ){
 void Game::setShips(RenderWindow & window, int playerNum ){
     bool isInside = false;
     sf::Font font;
-    font.loadFromFile("SqueakyChalkSound.ttf");
+    font.loadFromFile("assets/SqueakyChalkSound.ttf");
 
     while( window.isOpen() ){
         Event event;
@@ -318,7 +318,7 @@ bool Game::turn(RenderWindow & window, int i ){
                                 if(!players[1]->getBigField()->getField(j,k)->getBoom()){
                                     players[1]->getBigField()->getField(j,k)->setBoom(true);
                                     if(players[1]->getBigField()->getField(j,k)->getAssigned() && players[1]->getBigField()->getField(j,k)->getMember() != nullptr){
-                                        players[1]->getBigField()->getField(j,k)->getTexture()->loadFromFile("red.png");
+                                        players[1]->getBigField()->getField(j,k)->getTexture()->loadFromFile("assets/red.png");
                                         players[1]->getBigField()->getField(j,k)->getMember()->setDamage(players[1]->getBigField()->getField(j,k)->getMember()->getDamage() + 1);
                                         if( players[1]->getBigField()->getField(j,k)->getMember()->getDamage() >= players[1]->getBigField()->getField(j,k)->getMember()->getType() ){
                                             players[1]->getBigField()->getField(j,k)->getMember()->setSunk(true);
@@ -329,7 +329,7 @@ bool Game::turn(RenderWindow & window, int i ){
                                         return true;
                                     }
                                     else{
-                                        players[1]->getBigField()->getField(j,k)->getTexture()->loadFromFile("miss.png");
+                                        players[1]->getBigField()->getField(j,k)->getTexture()->loadFromFile("assets/miss.png");
                                         players[1]->getBigField()->getField(j,k)->getDrawing()->setTexture(*players[1]->getBigField()->getField(j,k)->getTexture());
                                         return false;
                                     }
@@ -349,7 +349,7 @@ bool Game::turn(RenderWindow & window, int i ){
                                         if(!players[0]->getBigField()->getField(j,k)->getBoom()){
                                             players[0]->getBigField()->getField(j,k)->setBoom(true);
                                             if(players[0]->getBigField()->getField(j,k)->getAssigned() && players[0]->getBigField()->getField(j,k)->getMember() != nullptr){
-                                                players[0]->getBigField()->getField(j,k)->getTexture()->loadFromFile("red.png");
+                                                players[0]->getBigField()->getField(j,k)->getTexture()->loadFromFile("assets/red.png");
 
                                                 players[0]->getBigField()->getField(j,k)->getMember()->setDamage(players[0]->getBigField()->getField(j,k)->getMember()->getDamage() + 1);
                                                 if( players[0]->getBigField()->getField(j,k)->getMember()->getDamage() >= players[0]->getBigField()->getField(j,k)->getMember()->getType() ){
@@ -361,7 +361,7 @@ bool Game::turn(RenderWindow & window, int i ){
                                                 return true;
                                             }
                                             else{
-                                                players[0]->getBigField()->getField(j,k)->getTexture()->loadFromFile("miss.png");
+                                                players[0]->getBigField()->getField(j,k)->getTexture()->loadFromFile("assets/miss.png");
                                                 players[0]->getBigField()->getField(j,k)->getDrawing()->setTexture(*players[0]->getBigField()->getField(j,k)->getTexture());
                                                 return false;
                                             }
@@ -403,9 +403,9 @@ void Game::drawAll(RenderWindow & window, int opt){
     window.clear(sf::Color(81, 132, 197));
 
     sf::Texture textureBackground;
-    textureBackground.loadFromFile( "table.jpg" );
+    textureBackground.loadFromFile( "assets/table.jpg" );
     try{
-            if (!textureBackground.loadFromFile("table.jpg"))
+            if (!textureBackground.loadFromFile("assets/table.jpg"))
                 throw(textureBackground);
         }
     catch(Texture){
@@ -418,9 +418,9 @@ void Game::drawAll(RenderWindow & window, int opt){
     tableSprite.setTexture( textureBackground );
 
     sf::Texture textureBigfieldLeft;
-    textureBigfieldLeft.loadFromFile( "Playground.png" );
+    textureBigfieldLeft.loadFromFile( "assets/playground.png" );
     try{
-            if (!textureBigfieldLeft.loadFromFile("Playground.png"))
+            if (!textureBigfieldLeft.loadFromFile("assets/playground.png"))
                 throw(textureBigfieldLeft);
         }
         catch(Texture){

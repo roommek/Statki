@@ -10,9 +10,9 @@ Jednomasztowiec::Jednomasztowiec(int number)
     type=1;
     position.x=600 + number*60;
     position.y=210;
-    texture.loadFromFile("statek1.png");
+    texture.loadFromFile("assets/statek1.png");
     try{
-            if (!texture.loadFromFile("statek1.png"))
+            if (!texture.loadFromFile("assets/statek1.png"))
                 throw(texture);
         }
     catch(Texture){
@@ -36,9 +36,9 @@ Jednomasztowiec::~Jednomasztowiec()
 
 void Jednomasztowiec::changeTexture()
 {
-    texture.loadFromFile("statek1DESTROYED.png");
+    texture.loadFromFile("assets/statek1DESTROYED.png");
     try{
-            if (!texture.loadFromFile("statek1DESTROYED.png"))
+            if (!texture.loadFromFile("assets/statek1DESTROYED.png"))
                 throw(texture);
     }
     catch(Texture){
